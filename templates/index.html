@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Interface Caméras - trhacknon</title>
+  <style>
+    body { background-color: #111; color: #0f0; font-family: monospace; padding: 20px; }
+    .camera { border: 1px solid #0f0; margin: 20px 0; padding: 10px; border-radius: 10px; }
+    iframe { border: none; width: 640px; height: 480px; background: #000; }
+    h2 { color: #0ff; }
+  </style>
+</head>
+<body>
+  <h1>🟢 Caméras personnelles - trhacknon</h1>
+
+  {% for cam in cameras %}
+    <div class="camera">
+      <h2>{{ cam.name }}</h2>
+      {% for login in cam.logins %}
+        <p><b>Utilisateur :</b> {{ login.user }} | <b>Mot de passe :</b> {{ login.pass or "(vide)" }}</p>
+        <p><a href="{{ cam.url }}" target="_blank">🔗 Accéder ({{ cam.url }})</a></p>
+        <iframe src="{{ cam.url }}"></iframe>
+        <hr>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</body>
+</html>
