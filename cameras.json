@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Camera 1 - Bureau",
+    "url": "http://31.41.63.195:80",
+    "logins": [
+      {"user": "admin", "pass": ""},
+      {"user": "admin1", "pass": "1234"}
+    ]
+  },
+  {
+    "name": "Camera 2 - Entrée",
+    "url": "http://185.91.178.92:82",
+    "logins": [
+      {"user": "admin", "pass": "Dfdbkjdf2l"},
+      {"user": "dir", "pass": "Kalitka2008"}
+    ]
+  },
+  {
+    "name": "Camera 3 - Extérieure",
+    "url": "http://38.60.223.47:3141",
+    "logins": [
+      {"user": "admin", "pass": "123456"},
+      {"user": "despina", "pass": "101978"},
+      {"user": "vogdos", "pass": "011976"}
+    ]
+  }
+]
